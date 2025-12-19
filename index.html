@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxTabs - Navegación Moderna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="light-effects">
+        <div class="light-spotlight"></div>
+        <div class="light-beam"></div>
+        <div class="light-glow"></div>
+    </div>
+    
+    <div class="container">
+        <div class="tabs-container">
+            <!-- Header con efectos de luz -->
+            <div class="header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Lux<span>Tabs</span></h1>
+                        <p class="subtitle">Navegación moderna con efectos de luz</p>
+                    </div>
+                </div>
+                <div class="status-indicator">
+                    <div class="status-dot glowing"></div>
+                    <span>Sistema Activo</span>
+                </div>
+            </div>
+
+            <!-- Navegación por Pestañas -->
+            <div class="tab-navigation">
+                <div class="tab-slider"></div>
+                <div class="tab-buttons" role="tablist">
+                    <button class="tab-btn active" data-tab="tab1" role="tab" aria-selected="true">
+                        <div class="btn-glow"></div>
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tab2" role="tab" aria-selected="false">
+                        <div class="btn-glow"></div>
+                        <i class="fas fa-briefcase"></i>
+                        <span>Servicios</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tab3" role="tab" aria-selected="false">
+                        <div class="btn-glow"></div>
+                        <i class="fas fa-chart-bar"></i>
+                        <span>Estadísticas</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tab4" role="tab" aria-selected="false">
+                        <div class="btn-glow"></div>
+                        <i class="fas fa-envelope"></i>
+                        <span>Contacto</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contenido de las Pestañas -->
+            <div class="tab-contents">
+                <!-- Pestaña 1: Inicio -->
+                <div class="tab-content active" id="tab1" role="tabpanel">
+                    <div class="content-header">
+                        <h2><i class="fas fa-home"></i> Bienvenido a LuxTabs</h2>
+                        <p>Interfaz moderna con efectos de luz y navegación fluida</p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Instantáneo</h3>
+                            <p>Cambio rápido entre pestañas sin recargar</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Diseño Moderno</h3>
+                            <p>Efectos de luz y gradientes vibrantes</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <h3>Navegación</h3>
+                            <p>Atajos de teclado para una experiencia fluida</p>
+                            <div class="feature-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 2: Servicios -->
+                <div class="tab-content" id="tab2" role="tabpanel">
+                    <div class="content-header">
+                        <h2><i class="fas fa-briefcase"></i> Nuestros Servicios</h2>
+                        <p>Soluciones profesionales con la mejor tecnología</p>
+                    </div>
+                    
+                    <div class="services-list">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Desarrollo Web</h3>
+                                <p>Sitios web modernos y aplicaciones responsivas</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> HTML5, CSS3, JavaScript</li>
+                                    <li><i class="fas fa-check"></i> React, Vue, Angular</li>
+                                    <li><i class="fas fa-check"></i> Diseño responsivo</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Apps Móviles</h3>
+                                <p>Aplicaciones nativas e híbridas para iOS y Android</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> React Native</li>
+                                    <li><i class="fas fa-check"></i> Flutter</li>
+                                    <li><i class="fas fa-check"></i> Swift, Kotlin</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="service-content">
+                                <h3>Consultoría</h3>
+                                <p>Estrategias de crecimiento y transformación digital</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Análisis de mercado</li>
+                                    <li><i class="fas fa-check"></i> Planificación estratégica</li>
+                                    <li><i class="fas fa-check"></i> Implementación</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Solicitar Información
+                    </button>
+                </div>
+
+                <!-- Pestaña 3: Estadísticas -->
+                <div class="tab-content" id="tab3" role="tabpanel">
+                    <div class="content-header">
+                        <h2><i class="fas fa-chart-bar"></i> Estadísticas</h2>
+                        <p>Datos y métricas de nuestro rendimiento</p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">1,850</div>
+                                <div class="stat-label">Clientes Satisfechos</div>
+                                <div class="stat-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Satisfacción</div>
+                                <div class="stat-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 98%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Soporte Disponible</div>
+                                <div class="stat-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 100%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Proyectos Completados</div>
+                                <div class="stat-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pestaña 4: Contacto -->
+                <div class="tab-content" id="tab4" role="tabpanel">
+                    <div class="content-header">
+                        <h2><i class="fas fa-envelope"></i> Contacto</h2>
+                        <p>Estamos aquí para ayudarte con tu proyecto</p>
+                    </div>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <h3><i class="fas fa-info-circle"></i> Información</h3>
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h4>Dirección</h4>
+                                        <p>Av. Principal 123, Ciudad</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h4>Teléfono</h4>
+                                        <p>+1 (234) 567-8900</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p>info@luxtabs.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form class="contact-form">
+                            <h3><i class="fas fa-paper-plane"></i> Envíanos un Mensaje</h3>
+                            <div class="form-group">
+                                <label for="name">
+                                    <i class="fas fa-user"></i> Nombre
+                                </label>
+                                <input type="text" id="name" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Email
+                                </label>
+                                <input type="email" id="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i> Mensaje
+                                </label>
+                                <textarea id="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ayuda de Teclado -->
+            <div class="keyboard-hint">
+                <i class="fas fa-keyboard"></i>
+                <span>Atajos: <kbd>←</kbd> <kbd>→</kbd> para navegar | <kbd>1-4</kbd> para acceso directo</span>
+            </div>
+            
+            <div class="footer">
+                <p>LuxTabs &copy; 2024 | Diseño Moderno con Efectos de Luz</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
